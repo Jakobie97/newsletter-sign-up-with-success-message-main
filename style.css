@@ -1,0 +1,136 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #36384e;
+    /* margin: 0 auto; */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    
+        
+}
+
+.container { 
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row; 
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 55rem;
+}
+
+.right_content .desktop_img {
+   display: flex;
+}
+
+.right_content .mobile_img {
+    display: none;
+}
+
+h2 {
+    font-size: 54px;
+    margin-left: 45px;
+    color: #242742;
+}
+
+.main_sentence {
+    font-size: 19px;
+    line-height: 1.7;;
+    color: #242742;
+    padding-right: 10px;
+    font-weight: 600;
+    margin-right: 0%;
+    margin-left: 5%;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 2.3;
+    font-size: 14px;
+    
+    
+}
+
+.Left_content p {
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+input {
+
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #a3a3a3;
+    font-weight: 100;
+}
+
+input:hover {
+    border: 2px solid #e66464;
+        transition: .5s;
+}
+
+button {
+    width: 97%;
+    margin-top: 25px;
+    
+    padding: 15px;
+    background-color: #242742;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color:#e66464;
+        transition:  .5s;
+}
+
+.attribution , a {
+    color: white;
+}
+
+/*------------------------------------------------------*/
+
+@media only screen and (max-width:500px) {
+
+   
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0%;
+        
+        
+    }
+    .Left_content{
+       padding: 15px;
+    }
+   .right_content .desktop_img {
+       display: none;
+   }
+
+   .right_content .mobile_img {
+       display: flex;
+       width: 100%;   
+       border-radius: 15px;
+   }
+
+   ul li {
+        margin-left: -35px;
+   }
+
+   h2 {
+     font-size: 40px;
+     margin-left: -2px;
+   }
+
+
+}
